@@ -1,0 +1,129 @@
+:root {
+  --nav-bg1: #f8f9fa;
+  --nav-bg2: #ffffff;
+  --nav-txtc: #495057;
+  --navhov-txtc: #dc3545;
+  --hero-bg: #f8f9fa;
+  --hero-tt: #1a2530;
+  --countbar-c: #ffffff;
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+.nav-bg {
+  background: linear-gradient(#f8f9fa, #ffffff);
+}
+.box a {
+  font-family: serif;
+}
+.btn-bg {
+  border: 1px solid black !important;
+  background-color: transparent;
+}
+.nav-item a {
+  font-weight: 500;
+  font-size: 1rem;
+  font-family: serif;
+  color: var(--nav-txtc);
+}
+.nav-item a:hover {
+  color: var(--navhov-txtc);
+}
+.active {
+  color: var(--navhov-txtc) !important ;
+}
+/* hero section */
+.hero {
+  height: 90vmin;
+  /* background:
+    linear-gradient(60deg, rgba(241, 245, 249, 0.5)),
+    url(./asset/image/hero.jpg); */
+    background: url(./asset/image/herobg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-text {
+  font-family: serif;
+  letter-spacing: 0.3rem;
+  font-weight: 800;
+  color: var(--hero-tt);
+  font-size: 3rem;
+}
+.hero-text span {
+  font-style: italic;
+  color: var(--navhov-txtc) !important;
+}
+.para-text {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: var(--hero-tt);
+  font-weight: 500;
+}
+/* hero section */
+
+/* type */
+.type{
+  background-color: #fff;
+}
+.type-txt{
+  font-weight: bold;
+  font-size: 0.3 rem;
+  color: var(--hero-tt);
+}
+.logo-img{
+  height: 40px;
+}
+
+
+/* type */
+
+/* work */
+.work-bg{
+  background-color:#f0f8ff;
+}
+.work-ff{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+.blood-doner{
+  min-height: 200px;
+  background: url(./asset/image/workbg.png);
+  background-size: cover;
+  background-position: center ;
+}
+.work-text{
+  color: #0B2C56 ;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* work */
+
+/* blood request */
+
+
+.bd{
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 2px;
+  height: fit-content;
+  border: 1px solid #dc3545;
+  border-radius: 3rem;
+  background-color: rgba(220, 53, 53,0.3);
+}
+.need-text{
+  font-size: 0.9rem;
+}
+
+/* blood request */
+/* why blood */
+.symbol-s{
+  font-size:4rem;
+}
+.bg-img{
+  min-height: 100px;
+  background: url(./asset/image/bg-img2.png);
+  background-size: cover;
+  background-position: center ;
+}
+/* why blood */
