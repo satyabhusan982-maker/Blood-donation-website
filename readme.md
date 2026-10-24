@@ -129,4 +129,3 @@ Contact Us
 +91 98765 43210
 support@bloodsetu.in
 Bhubaneswar, Odisha, India
-https://github.com/satyabhusan982-maker/Blood-donation-website.git
