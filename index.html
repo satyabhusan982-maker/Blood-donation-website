@@ -4,412 +4,761 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BloodSetu</title>
+
+    <meta name="description"
+        content="BloodSetu connects blood donors with people in need. Find blood donors, request blood and help save lives.">
+
+    <meta name="theme-color" content="#dc3545">
+
+    <title>BloodSetu | Donate Blood, Save Lives</title>
+
+    <!-- Favicon -->
     <link rel="shortcut icon" href="./asset/image/logo3.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./asset/bootstrap/css/bootstrap.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg nav-bg d-flex justify-content-between">
-        <div class="container-fluid ">
-            <a class="navbar-brand " href="#"><img src="./asset/image/logo3.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg nav-bg sticky-top">
+
+        <div class="container-fluid px-3 px-lg-5">
+
+            <a class="navbar-brand" href="#">
+                <img src="./asset/image/logo3.png" alt="BloodSetu Logo" width="65">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+
                 <span class="navbar-toggler-icon"></span>
+
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <ul class="navbar-nav mx-auto mb-3 mb-lg-0">
+
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" href="#home" aria-current="page">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#"> Find Blood</a>
+                        <a class="nav-link" href="#urgent">Find Blood</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Become a Donor </a>
+                        <a class="nav-link" href="#donate">Become a Donor</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="#"> Blood Banks</a>
+                        <a class="nav-link" href="#blood-banks">Blood Banks</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="#"> Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
 
                 </ul>
-                <div class="box">
-                    <a href="" class="btn btn-danger mx-2">Login</a>
-                    <a href="" class="btn btn-bg">Register</a>
+
+                <div class="d-flex gap-2 flex-wrap">
+
+                    <a href="#" class="btn btn-danger">
+                        Login
+                    </a>
+
+                    <a href="#" class="btn btn-bg">
+                        Register
+                    </a>
+
                 </div>
 
             </div>
+
         </div>
+
     </nav>
-    <!-- navbar -->
-    <!-- HERO SECTION -->
-    <section class="hero d-flex align-items-center">
-        <div class="container-fluid ps-5 pb-3">
-            <div class="row ">
-                <div class="col-12 col-lg-5">
-                    <h1 class="hero-text ">Find Blood Give Hope<span>Save Lives.</span></h1>
-                    <p class="para-text">Connect with nearby blood donors and blood banks. Every drop can make a
-                        difference.</p>
-                    <div class="box">
-                        <a href="" class="btn btn-danger me-4">Need Blood</a>
-                        <a href="" class="btn btn-bg">💓Become a Donor</a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero d-flex align-items-center" id="home">
+
+        <div class="container-fluid px-4 px-lg-5">
+
+            <div class="row">
+
+                <div class="col-12 col-md-9 col-lg-6">
+
+                    <h1 class="hero-text">
+                        Find Blood Give Hope
+                        <span class="text-danger">Save Lives.</span>
+                    </h1>
+
+                    <p class="para-text">
+                        Connect with nearby blood donors and blood banks.
+                        Every drop can make a difference.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-3">
+
+                        <a href="#urgent" class="btn btn-danger">
+                            Need Blood
+                        </a>
+
+                        <a href="#donate" class="btn btn-bg">
+                            <i class="fa-solid fa-heart me-1"></i>
+                            Become a Donor
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </section>
 
-    <!-- HERO SECTION -->
-    <!--TYPES -->
+    <!-- ================= STATISTICS ================= -->
+
     <section class="type py-4 shadow-sm">
-        <div class="container-fluid">
-            <div class="row text-center align-items-center">
-                <!-- type-1 -->
-                <div class="col-6 col-md-3 stat-item ">
+
+        <div class="container-fluid px-3 px-lg-5">
+
+            <div class="row text-center align-items-center g-3">
+
+                <div class="col-6 col-md-3 stat-item">
+
                     <div class="d-flex align-items-center justify-content-center">
+
                         <i class="fa-solid fa-users text-danger fs-1 me-3"></i>
-                        <div class="right">
-                            <h3 class="fw-bold mb-0 ">10,000+</h3>
+
+                        <div>
+                            <h3 class="fw-bold mb-0">10,000+</h3>
                             <p class="mb-0 small">Registered Donors</p>
                         </div>
-                    </div>
-                </div>
-                <!-- type-2 -->
 
-                <div class="col-6 col-md-3 stat-item ">
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-md-3 stat-item">
+
                     <div class="d-flex align-items-center justify-content-center">
+
                         <i class="fa-solid fa-droplet text-danger fs-1 me-3"></i>
-                        <div class="right">
-                            <h3 class="fw-bold mb-0 ">500+</h3>
-                            <p class="mb-0 small">Blood Requests Fulfilled</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- type-3 -->
 
-                <div class="col-6 col-md-3 stat-item ">
+                        <div>
+                            <h3 class="fw-bold mb-0">500+</h3>
+                            <p class="mb-0 small">Requests Fulfilled</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-md-3 stat-item">
+
                     <div class="d-flex align-items-center justify-content-center">
-                        <i class="fa-solid fa-hotel  text-danger fs-1 me-3"></i>
-                        <div class="right">
-                            <h3 class="fw-bold mb-0 ">200+ </h3>
+
+                        <i class="fa-solid fa-hospital text-danger fs-1 me-3"></i>
+
+                        <div>
+                            <h3 class="fw-bold mb-0">200+</h3>
                             <p class="mb-0 small">Partner Hospitals</p>
                         </div>
-                    </div>
-                </div>
-                <!-- type-4 -->
 
-                <div class="col-6 col-md-3 stat-item ">
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-md-3 stat-item">
+
                     <div class="d-flex align-items-center justify-content-center">
+
                         <i class="fa-solid fa-location-dot text-danger fs-1 me-3"></i>
-                        <div class="right">
-                            <h3 class="fw-bold mb-0 ">15+</h3>
-                            <p class="mb-0 small"> Cities Covered</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--TYPES -->
 
-    <!-- WORK -->
-    <section class="work work-bg pt-4 px-3">
-        <div class="container-fluid">
-            <div class="row mb-4 px-2">
-                <div class="col d-flex justify-content-center align-items-center">
-                    <h2 class="work-ff">How BloodSetu Works</h2>
-                </div>
-            </div>
-            <div class="row mb-4">
-                <!-- work-1 -->
-                <div class="col-12 col-md-4 d-flex flex-column text-center align-items-center">
-                    <i class="fa-solid fa-circle-h mb-1 text-danger fs-6"></i>
-                    <i class="fa-solid fa-user text-danger fs-4"></i>
-                    <h5 class="mb-0">Search or Request</h5>
-                    <p class=" para-text">Find nearby donors or <br> post a blood request.</p>
-
-                </div>
-                <!-- work-2 -->
-                <div class="col-12 col-md-4 d-flex flex-column text-center align-items-center">
-                    <i class="fa-solid fa-circle-h mb-1 text-danger fs-6"></i>
-                    <i class="fa-solid fa-users text-primary fs-4"></i>
-                    <h5 class="mb-0">Get Matched</h5>
-                    <p class="para-text"> Connect with verified <br>donors in your location.</p>
-
-                </div>
-                <!-- work-3 -->
-                <div class="col-12 col-md-4 d-flex flex-column text-center align-items-center">
-                    <i class="fa-solid fa-circle-h mb-1 text-danger fs-6"></i>
-                    <i class="fa-solid fa-shield-heart text-danger fs-4"></i>
-                    <h5 class="mb-0">Save Lives </h5>
-                    <p class=" para-text">Coordinate and donate <br>through authorized centres.</p>
-
-                </div>
-
-            </div>
-            <div class="blood-doner rounded ">
-                <div class="row ">
-                    <div class="col m-4 work-text">
-                        <h4 class="fw-bold"> Be a Hero. <br> Become a Blood Donor.</h4>
-                        <p class="fs-6 "> Your one donation can save up to 3 lives. <br>Register now and help someone in
-                            need.</p>
-                        <a href="" class="btn btn-danger btn-sm fw-bold">⭕Register as Donor</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- WORK -->
-    <!-- Blood request -->
-    <section class="urgent type py-4 px-4">
-        <div class="container-fluid ">
-            <div class="row mb-4">
-                <div class="col  d-flex justify-content-between align-items-center">
-                    <h3 class="fs-4 fw-bold">Urgent Blood Requests</h3>
-                    <a href="" class="btn text-danger fs-6">View All→</a>
-                </div>
-
-            </div>
-            <div class="row d-flex align-items-center justify-content-center serviceCard ">
-                <!-- box-1 -->
-                <div class="col-12 col-md-3 bg-light rounded p-3 mt-4 ">
-                    <span class="pe-4 "><i class="fa-solid fa-heart-pulse text-danger"></i></span>
-                    <span class="bd  text-danger">O+ Needed</span>
-                    <h5 class="mt-2 mb-0">Satya Das</h5>
-                    <p class="text-muted need-text"> SUM Hospital, Bhubaneswar</p>
-                    <div class="d-flex justify-content-between">
-                        <p>2 Units</p>
-                        <span class="bd  text-danger ">Urgent</span>
-                    </div>
-                    <p class="mb-1 need-text">2 hours ago</p>
-                    <div class="d-flex justify-content-center need-text">
-                        <a href="" class="btn btn-danger w-100 mt-2 py-1 px-5"> Help Now</a>
-                    </div>
-                </div>
-                
-                <!-- box-2 -->
-                <div class="col-12 col-md-3 bg-light rounded p-3 mt-4 ">
-                    <span class="pe-4 "><i class="fa-solid fa-heart-pulse text-danger"></i></span>
-                    <span class="bd  text-danger">O+ Needed</span>
-                    <h5 class="mt-2 mb-0">Satya Das</h5>
-                    <p class="text-muted need-text"> SUM Hospital, Bhubaneswar</p>
-                    <div class="d-flex justify-content-between">
-                        <p>2 Units</p>
-                        <span class="bd  text-danger ">Urgent</span>
-                    </div>
-                    <p class="mb-1 need-text">2 hours ago</p>
-                    <div class="d-flex justify-content-center need-text">
-                        <a href="" class="btn btn-danger w-100 mt-2 py-1 px-5"> Help Now</a>
-                    </div>
-                </div>
-                <!-- box-2 -->
-                <div class="col-12 col-md-3 bg-light rounded p-3 mt-4 ">
-                    <span class="pe-4 "><i class="fa-solid fa-heart-pulse text-danger"></i></span>
-                    <span class="bd  text-danger">O+ Needed</span>
-                    <h5 class="mt-2 mb-0">Satya Das</h5>
-                    <p class="text-muted need-text"> SUM Hospital, Bhubaneswar</p>
-                    <div class="d-flex justify-content-between">
-                        <p>2 Units</p>
-                        <span class="bd  text-danger ">Urgent</span>
-                    </div>
-                    <p class="mb-1 need-text">2 hours ago</p>
-                    <div class="d-flex justify-content-center need-text">
-                        <a href="" class="btn btn-danger w-100 mt-2 py-1 px-5"> Help Now</a>
-                    </div>
-                </div>
-                <!-- box-2 -->
-                <div class="col-12 col-md-3 bg-light rounded p-3 mt-4">
-                    <span class="pe-4 "><i class="fa-solid fa-heart-pulse text-danger"></i></span>
-                    <span class="bd  text-danger">O+ Needed</span>
-                    <h5 class="mt-2 mb-0">Satya Das</h5>
-                    <p class="text-muted need-text"> SUM Hospital, Bhubaneswar</p>
-                    <div class="d-flex justify-content-between">
-                        <p>2 Units</p>
-                        <span class="bd  text-danger ">Urgent</span>
-                    </div>
-                    <p class="mb-1 need-text">2 hours ago</p>
-                    <div class="d-flex justify-content-center need-text">
-                        <a href="" class="btn btn-danger w-100 mt-2  px-5"> Help Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Blood request -->
-    <!-- why donate blood -->
-    <section class="donate py-4 px-4">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col mb-4">
-                    <h2 class="fs-4 fw-bold ">Why Donate Blood?</h2>
-                </div>
-            </div>
-            <div class="row d-flex justify-content-center">
-                <!-- blood-1 -->
-                <div class="col-12 col-md-3 d-flex align-items-center gap-2 pt-3 justify-content-center ">
-                    <i class="fa-solid fa-heart-pulse text-danger symbol-s  pe-1"></i>
-                    <div>
-                        <h5 class="mb-1 type-txt">Save Lives</h5>
-                        <p class="para-text"> Help accident victims, surgery patients and more.</p>
-                    </div>
-                </div>
-                <!-- blood-2 -->
-                <div class="col-12 col-md-3 d-flex align-items-center gap-2 pt-3  justify-content-center">
-                    <i class="fa-solid fa-users text-danger symbol-s  pe-1"></i>
-                    <div>
-                        <h5 class="mb-1 type-txt">Builds a Healthier Community</h5>
-                        <p class="para-text"> Creates a reliable blood supply.</p>
-                    </div>
-                </div>
-                <!-- blood-3 -->
-                <div class="col-12 col-md-3 d-flex align-items-center gap-2 pt-3 justify-content-center">
-                    <i class="fa-solid fa-droplet text-danger symbol-s  pe-1"></i>
-                    <div>
-                        <h5 class="mb-1 type-txt">It's Safe & Simple</h5>
-                        <p class="para-text"> A quick and safe process with minimal discomfort</p>
-                    </div>
-                </div>
-                <!-- blood-4 -->
-                <div class="col-12 col-md-3 d-flex align-items-center gap-2 pt-3 justify-content-center ">
-                    <i class="fa-solid fa-shield-heart text-danger symbol-s  pe-1"></i>
-                    <div>
-                        <h5 class="mb-1 type-txt">Good for Your Health </h5>
-                        <p class="para-text"> Regular donation can improve your well-being.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row pt-4">
-                <div class="bg-img rounded d-flex justify-content-center align-items-center">
-                    <div class="col d-flex justify-content-around align-items-center  pt-3  ">
                         <div>
-                            <h4 class=" text-light">Blood Donation Awareness</h4>
-                            <p class="text-light fs-6">Small act. Big impact. Be the reason someone lives.</p>
+                            <h3 class="fw-bold mb-0">15+</h3>
+                            <p class="mb-0 small">Cities Covered</p>
                         </div>
-                        <a href="" class="btn btn-sm btn-light text-danger"> Learn More</a>
+
                     </div>
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
-    <!-- why donate blood -->
-    
-    <!-- Footer -->
-    <footer class="bg-white text-dark pt-5 pb-4 border-top">
-        <div class="container">
+
+    <!-- ================= HOW IT WORKS ================= -->
+
+    <section class="work work-bg pt-5 pb-4 px-3" id="about">
+
+        <div class="container-fluid">
+
+            <div class="row mb-5">
+
+                <div class="col text-center">
+                    <h2 class="work-ff">How BloodSetu Works</h2>
+                    <p class="text-muted">
+                        Three simple steps to make a difference.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="row g-4 text-center">
+
+                <div class="col-12 col-md-4">
+
+                    <i class="fa-solid fa-magnifying-glass text-danger fs-1 mb-3"></i>
+
+                    <h5>Search or Request</h5>
+
+                    <p class="para-text">
+                        Find nearby donors or post a blood request.
+                    </p>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <i class="fa-solid fa-users text-primary fs-1 mb-3"></i>
+
+                    <h5>Get Matched</h5>
+
+                    <p class="para-text">
+                        Connect with available donors in your location.
+                    </p>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+
+                    <i class="fa-solid fa-shield-heart text-danger fs-1 mb-3"></i>
+
+                    <h5>Save Lives</h5>
+
+                    <p class="para-text">
+                        Coordinate and donate through authorized centres.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- Donor Banner -->
+
+            <div class="blood-doner rounded mt-5">
+
+                <div class="row w-100">
+
+                    <div class="col-12 col-md-8 m-4 work-text">
+
+                        <h4 class="fw-bold">
+                            Be a Hero.
+                            <br>
+                            Become a Blood Donor.
+                        </h4>
+
+                        <p>
+                            Your one donation can help save lives.
+                            <br>
+                            Register now and help someone in need.
+                        </p>
+
+                        <a href="#donate" class="btn btn-danger btn-sm fw-bold">
+                            <i class="fa-solid fa-heart me-1"></i>
+                            Register as Donor
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= URGENT BLOOD REQUESTS ================= -->
+
+    <section class="urgent type py-5 px-3" id="urgent">
+
+        <div class="container-fluid">
+
+            <div class="row mb-4 align-items-center">
+
+                <div class="col">
+                    <h2 class="fs-4 fw-bold mb-0">
+                        Urgent Blood Requests
+                    </h2>
+                </div>
+
+                <div class="col-auto">
+                    <a href="#" class="btn text-danger">
+                        View All <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="row g-3 serviceCard">
+
+                <!-- Request 1 -->
+
+                <div class="col-12 col-sm-6 col-xl-3">
+
+                    <div class="bg-light rounded p-3 h-100">
+
+                        <div>
+                            <i class="fa-solid fa-heart-pulse text-danger me-2"></i>
+                            <span class="bd text-danger">O+ Needed</span>
+                        </div>
+
+                        <h5 class="mt-3 mb-1">Satya Das</h5>
+
+                        <p class="text-muted need-text">
+                            SUM Hospital, Bhubaneswar
+                        </p>
+
+                        <div class="d-flex justify-content-between">
+                            <span>2 Units</span>
+                            <span class="bd text-danger">Urgent</span>
+                        </div>
+
+                        <p class="mt-2 mb-2 need-text">2 hours ago</p>
+
+                        <a href="#" class="btn btn-danger w-100">
+                            Help Now
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Request 2 -->
+
+                <div class="col-12 col-sm-6 col-xl-3">
+
+                    <div class="bg-light rounded p-3 h-100">
+
+                        <div>
+                            <i class="fa-solid fa-heart-pulse text-danger me-2"></i>
+                            <span class="bd text-danger">A+ Needed</span>
+                        </div>
+
+                        <h5 class="mt-3 mb-1">Patient Request</h5>
+
+                        <p class="text-muted need-text">
+                            AIIMS, Bhubaneswar
+                        </p>
+
+                        <div class="d-flex justify-content-between">
+                            <span>1 Unit</span>
+                            <span class="bd text-danger">Urgent</span>
+                        </div>
+
+                        <p class="mt-2 mb-2 need-text">3 hours ago</p>
+
+                        <a href="#" class="btn btn-danger w-100">
+                            Help Now
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Request 3 -->
+
+                <div class="col-12 col-sm-6 col-xl-3">
+
+                    <div class="bg-light rounded p-3 h-100">
+
+                        <div>
+                            <i class="fa-solid fa-heart-pulse text-danger me-2"></i>
+                            <span class="bd text-danger">B+ Needed</span>
+                        </div>
+
+                        <h5 class="mt-3 mb-1">Patient Request</h5>
+
+                        <p class="text-muted need-text">
+                            Capital Hospital, Bhubaneswar
+                        </p>
+
+                        <div class="d-flex justify-content-between">
+                            <span>2 Units</span>
+                            <span class="bd text-danger">Urgent</span>
+                        </div>
+
+                        <p class="mt-2 mb-2 need-text">5 hours ago</p>
+
+                        <a href="#" class="btn btn-danger w-100">
+                            Help Now
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Request 4 -->
+
+                <div class="col-12 col-sm-6 col-xl-3">
+
+                    <div class="bg-light rounded p-3 h-100">
+
+                        <div>
+                            <i class="fa-solid fa-heart-pulse text-danger me-2"></i>
+                            <span class="bd text-danger">AB+ Needed</span>
+                        </div>
+
+                        <h5 class="mt-3 mb-1">Patient Request</h5>
+
+                        <p class="text-muted need-text">
+                            KIMS Hospital, Bhubaneswar
+                        </p>
+
+                        <div class="d-flex justify-content-between">
+                            <span>1 Unit</span>
+                            <span class="bd text-danger">Urgent</span>
+                        </div>
+
+                        <p class="mt-2 mb-2 need-text">6 hours ago</p>
+
+                        <a href="#" class="btn btn-danger w-100">
+                            Help Now
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= WHY DONATE BLOOD ================= -->
+
+    <section class="donate py-5 px-3" id="donate">
+
+        <div class="container-fluid">
+
+            <div class="row mb-4">
+
+                <div class="col text-center">
+                    <h2 class="fs-3 fw-bold">Why Donate Blood?</h2>
+                    <p class="text-muted">
+                        Your small contribution can make a big difference.
+                    </p>
+                </div>
+
+            </div>
+
             <div class="row g-4">
 
-                <!-- Column 1: Brand & Socials -->
-                <div class="col-lg-3 col-md-6">
-                    <div class="d-flex align-items-center mb-3">
-                        <!-- Replace with your actual logo path -->
-                        <img src="./asset/image/logo3.png" alt="BloodSetu Logo" height="38" class="me-2">
+                <div class="col-12 col-sm-6 col-xl-3">
+
+                    <div class="d-flex align-items-center gap-3">
+
+                        <i class="fa-solid fa-heart-pulse text-danger symbol-s"></i>
+
+                        <div>
+                            <h5 class="mb-1 type-txt">Save Lives</h5>
+                            <p class="para-text">
+                                Help accident victims, surgery patients and more.
+                            </p>
+                        </div>
+
                     </div>
-                    <p class="text-muted small mb-4">
-                        A community-driven platform to connect blood donors with those in need. Let's build a healthier,
-                        safer tomorrow together.
-                    </p>
-                    <div class="d-flex gap-2">
-                        <a href="#"
-                            class="btn btn-primary btn-sm rounded-circle d-flex align-items-center justify-content-center"
-                            style="width: 32px; height: 32px;"><i class="bi bi-facebook"></i></a>
-                        <a href="#"
-                            class="btn btn-danger btn-sm rounded-circle d-flex align-items-center justify-content-center"
-                            style="width: 32px; height: 32px;"><i class="bi bi-instagram"></i></a>
-                        <a href="#"
-                            class="btn btn-dark btn-sm rounded-circle d-flex align-items-center justify-content-center"
-                            style="width: 32px; height: 32px;"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#"
-                            class="btn btn-danger btn-sm rounded-circle d-flex align-items-center justify-content-center"
-                            style="width: 32px; height: 32px;"><i class="bi bi-youtube"></i></a>
-                        <a href="#"
-                            class="btn btn-primary btn-sm rounded-circle d-flex align-items-center justify-content-center"
-                            style="width: 32px; height: 32px;"><i class="bi bi-linkedin"></i></a>
+
+                </div>
+
+                <div class="col-12 col-sm-6 col-xl-3">
+
+                    <div class="d-flex align-items-center gap-3">
+
+                        <i class="fa-solid fa-users text-danger symbol-s"></i>
+
+                        <div>
+                            <h5 class="mb-1 type-txt">
+                                Build a Healthier Community
+                            </h5>
+                            <p class="para-text">
+                                Create a reliable blood supply.
+                            </p>
+                        </div>
+
                     </div>
+
                 </div>
 
-                <!-- Column 2: Quick Links -->
-                <div class="col-lg-2 col-md-6">
-                    <h6 class="fw-bold mb-3">Quick Links</h6>
-                    <ul class="list-unstyled small">
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Home</a></li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Find Blood</a></li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Become a Donor</a></li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Blood Banks</a></li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">About Us</a></li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Contact</a></li>
-                    </ul>
+                <div class="col-12 col-sm-6 col-xl-3">
+
+                    <div class="d-flex align-items-center gap-3">
+
+                        <i class="fa-solid fa-droplet text-danger symbol-s"></i>
+
+                        <div>
+                            <h5 class="mb-1 type-txt">Safe & Simple</h5>
+                            <p class="para-text">
+                                Blood donation is performed by trained professionals.
+                            </p>
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <!-- Column 3: For Donors -->
-                <div class="col-lg-2 col-md-6">
-                    <h6 class="fw-bold mb-3">For Donors</h6>
-                    <ul class="list-unstyled small">
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Donor Registration</a></li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Donation Guidelines</a>
-                        </li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Eligibility Criteria</a>
-                        </li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Benefits of Donating</a>
-                        </li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">FAQs</a></li>
-                    </ul>
-                </div>
+                <div class="col-12 col-sm-6 col-xl-3">
 
-                <!-- Column 4: For Patients -->
-                <div class="col-lg-2 col-md-6">
-                    <h6 class="fw-bold mb-3">For Patients</h6>
-                    <ul class="list-unstyled small">
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Request Blood</a></li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Search Donors</a></li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Partner Hospitals</a></li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Emergency Contact</a></li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Support</a></li>
-                    </ul>
-                </div>
+                    <div class="d-flex align-items-center gap-3">
 
-                <!-- Column 5: Contact Us -->
-                <div class="col-lg-3 col-md-6">
-                    <h6 class="fw-bold mb-3">Contact Us</h6>
-                    <ul class="list-unstyled small text-muted">
-                        <li class="mb-3 d-flex align-items-start">
-                            <i class="bi bi-telephone-fill me-2 text-danger mt-1"></i>
-                            <span>+91 98765 43210</span>
-                        </li>
-                        <li class="mb-3 d-flex align-items-start">
-                            <i class="bi bi-envelope-fill me-2 text-danger mt-1"></i>
-                            <span>support@bloodsetu.in</span>
-                        </li>
-                        <li class="mb-3 d-flex align-items-start">
-                            <i class="bi bi-geo-alt-fill me-2 text-danger mt-1"></i>
-                            <span>Bhubaneswar, Odisha, India</span>
-                        </li>
-                    </ul>
+                        <i class="fa-solid fa-shield-heart text-danger symbol-s"></i>
+
+                        <div>
+                            <h5 class="mb-1 type-txt">Help Others</h5>
+                            <p class="para-text">
+                                Be part of a community that saves lives.
+                            </p>
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
-        </div>
-    </footer>
 
-    <!-- Footer -->
+            <!-- Awareness Banner -->
 
 
 
+            <!-- ================= BLOOD BANKS ================= -->
 
+            <section class="blood-bank-section py-5">
+                <div class="container text-center">
+                    <h2 class="fw-bold">Find Nearby Blood Banks</h2>
 
-    <script src="./asset/bootstrap/js/bootstrap.bundle.js"></script>
+                    <p>
+                        Locate nearby blood banks and find the blood
+                        you need during an emergency.
+                    </p>
+
+                    <a href="#blood-banks" class="btn btn-danger">
+                        Explore Blood Banks
+                    </a>
+                </div>
+            </section>
+
+            <!-- ================= FOOTER ================= -->
+
+            <footer class="bg-white text-dark pt-5 pb-4 border-top" id="contact">
+
+                <div class="container-fluid px-4 px-lg-5">
+
+                    <div class="row g-4">
+
+                        <!-- Brand -->
+
+                        <div class="col-12 col-md-6 col-lg-3">
+
+                            <img src="./asset/image/logo3.png" alt="BloodSetu Logo" height="45" class="mb-3">
+
+                            <p class="text-muted small mb-4">
+                                A community-driven platform to connect blood donors
+                                with those in need. Let's build a healthier,
+                                safer tomorrow together.
+                            </p>
+
+                            <div class="d-flex gap-3">
+
+                                <a href="#" aria-label="Facebook" class="text-primary fs-5">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+
+                                <a href="#" aria-label="Instagram" class="text-danger fs-5">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+
+                                <a href="#" aria-label="Twitter" class="text-dark fs-5">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+
+                                <a href="#" aria-label="YouTube" class="text-danger fs-5">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+
+                                <a href="#" aria-label="LinkedIn" class="text-primary fs-5">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Quick Links -->
+
+                        <div class="col-6 col-md-6 col-lg-2">
+
+                            <h6 class="fw-bold mb-3">Quick Links</h6>
+
+                            <ul class="list-unstyled small">
+
+                                <li class="mb-2"><a href="#home" class="text-decoration-none text-muted">Home</a></li>
+
+                                <li class="mb-2"><a href="#urgent" class="text-decoration-none text-muted">Find
+                                        Blood</a></li>
+
+                                <li class="mb-2"><a href="#donate" class="text-decoration-none text-muted">Become a
+                                        Donor</a>
+                                </li>
+
+                                <li class="mb-2"><a href="#blood-banks" class="text-decoration-none text-muted">Blood
+                                        Banks</a>
+                                </li>
+
+                                <li class="mb-2"><a href="#about" class="text-decoration-none text-muted">About Us</a>
+                                </li>
+
+                                <li class="mb-2"><a href="#contact" class="text-decoration-none text-muted">Contact</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <!-- For Donors -->
+
+                        <div class="col-6 col-md-6 col-lg-2">
+
+                            <h6 class="fw-bold mb-3">For Donors</h6>
+
+                            <ul class="list-unstyled small">
+
+                                <li class="mb-2"><a href="#donate" class="text-decoration-none text-muted">Donor
+                                        Registration</a></li>
+
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Donation
+                                        Guidelines</a>
+                                </li>
+
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Eligibility
+                                        Criteria</a>
+                                </li>
+
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Benefits of
+                                        Donating</a>
+                                </li>
+
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-muted">FAQs</a></li>
+
+                            </ul>
+
+                        </div>
+
+                        <!-- For Patients -->
+
+                        <div class="col-6 col-md-6 col-lg-2">
+
+                            <h6 class="fw-bold mb-3">For Patients</h6>
+
+                            <ul class="list-unstyled small">
+
+                                <li class="mb-2"><a href="#urgent" class="text-decoration-none text-muted">Request
+                                        Blood</a>
+                                </li>
+
+                                <li class="mb-2"><a href="#urgent" class="text-decoration-none text-muted">Search
+                                        Donors</a>
+                                </li>
+
+                                <li class="mb-2"><a href="#blood-banks" class="text-decoration-none text-muted">Partner
+                                        Hospitals</a></li>
+
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Emergency
+                                        Contact</a></li>
+
+                                <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Support</a></li>
+
+                            </ul>
+
+                        </div>
+
+                        <!-- Contact -->
+
+                        <div class="col-12 col-md-6 col-lg-3">
+
+                            <h6 class="fw-bold mb-3">Contact Us</h6>
+
+                            <ul class="list-unstyled small text-muted">
+
+                                <li class="mb-3 d-flex align-items-start">
+
+                                    <i class="fa-solid fa-phone text-danger me-2 mt-1"></i>
+
+                                    <span>+91 98765 43210</span>
+
+                                </li>
+
+                                <li class="mb-3 d-flex align-items-start">
+
+                                    <i class="fa-solid fa-envelope text-danger me-2 mt-1"></i>
+
+                                    <span>support@bloodsetu.in</span>
+
+                                </li>
+
+                                <li class="mb-3 d-flex align-items-start">
+
+                                    <i class="fa-solid fa-location-dot text-danger me-2 mt-1"></i>
+
+                                    <span>Bhubaneswar, Odisha, India</span>
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <hr class="my-4">
+
+                    <div class="text-center text-muted small">
+
+                        <p class="mb-0">
+                            &copy; 2026 BloodSetu. All Rights Reserved.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </footer>
+
+            <!-- ================= SCRIPTS ================= -->
+
+            <script src="./asset/bootstrap/js/bootstrap.bundle.js"></script>
+
 </body>
 
 </html>
