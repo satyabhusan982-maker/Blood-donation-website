@@ -70,7 +70,8 @@ BloodSetu/
 
 3. Open `index.html` in your browser.
 
-4. Alternatively, use the **Live Server** extension in Visual Studio Code.
+4. Alternatively,
+5.Live Demo:https://satyabhusan982-maker.github.io/Blood-donation-website/
 
 ##  Project Purpose
 
